@@ -22,3 +22,22 @@ $(".time-block").each(function () {
     }
 });
 
+// Get textarea values from local stoarge if present
+for (var i=9; i<18; i++) {
+    var hourTextVal = localStorage.getItem(i);
+    var hourTextID = "text-" + i;
+
+    if (hourTextVal !== null) {
+        document.getElementById(hourTextID).value = hourTextVal;
+    }
+
+    //console.log(document.getElementById(hourTextID));
+};
+
+// Save textarea value to local stoarge
+$(".saveBtn").on("click", function () {
+    var key = $(this).parent().attr("id");
+    var value = $(this).parent().find(".description").val();
+    localStorage.setItem(key, value);
+    console.log(key, value);
+  });
