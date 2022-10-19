@@ -32,7 +32,7 @@ The finished product can be found here: [https://japaricio98.github.io/Work-Day-
 Screenshots of the finished product appear below.
 
 ![pg-index](Develop/assets/images/pg-index.png)
-
+![pg-index-results(Develop/assets/images/pg-index-results.png
 
 
 ## Credits
